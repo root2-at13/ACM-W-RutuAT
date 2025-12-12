@@ -1,0 +1,196 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Nook | Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">The Book Nook</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Your Next Favourite Book</h2>
+        <p>Dive into reviews, recommendations, and more!</p>
+        <button onclick="scrollToSection()">Explore Reviews</button>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Latest Reviews</h2>
+        <div class="review-grid">
+            <div class="card">
+                <h3>"The Alchemist"</h3>
+                <p>A magical story about following your dreams. ⭐⭐⭐⭐☆</p>
+            </div>
+            <div class="card">
+                <h3>"Atomic Habits"</h3>
+                <p>Transformative guide on building habits. ⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="card">
+                <h3>"The Great Gatsby"</h3>
+                <p>A tragic story of love and ambition. ⭐⭐⭐⭐☆</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 The Book Nook | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Nook | About</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">The Book Nook</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>The Book Nook is a community-driven platform for sharing book reviews and discovering your next great read. Created by readers, for readers.</p>
+        <p>We cover fiction, non-fiction, classics, self-help, and more. Whether you're a casual reader or a passionate bibliophile, you'll find something here!</p>
+    </section>
+
+    <footer>
+        <p>© 2025 The Book Nook | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Nook | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">The Book Nook</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 The Book Nook | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+<!-- style.css -->
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #2b2b2b;
+    color: white;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ececec;
+}
+
+.reviews {
+    padding: 40px;
+    text-align: center;
+}
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section, .contact-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+</style>
+
+<!-- script.js -->
+<script>
+function scrollToSection() {
+    document.getElementById("reviews").scrollIntoView({ behavior: "smooth" });
+}
+</script>
