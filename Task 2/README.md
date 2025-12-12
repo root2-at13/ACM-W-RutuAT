@@ -1,6 +1,6 @@
 # The Book Nook - Book Review Website
 
-A sophisticated book review website with a library aesthetic, featuring elegant typography and warm burgundy tones.
+A book review website with a library aesthetic, featuring elegant typography and warm burgundy themed tones.
 
 ## 🎨 Design Features
 
@@ -35,15 +35,15 @@ book-nook/
 
 ### About Page (about.html)
 - Introduction to The Book Nook
-- Featured: **Rutu A T** as the curator
+- Featured: **Rutu A T** as the creator and curator
 - Site philosophy and values
 - Sidebar with additional information
 - Literary quotes
 
 ### Contact Page (contact.html)
 - Contact form with fields:
-  - Name
-  - Email
+  - Name: someHuman
+  - Email: somthing#@emil.com
   - Subject dropdown
   - Message textarea
 - Form validation
@@ -116,7 +116,7 @@ To add more books, edit the `books` array in `script.js`:
 
 ## 👤 About the Curator
 
-**Rutu A T** - A passionate reader who has curated these book recommendations with care and thoughtfulness. Each review comes from genuine appreciation and careful consideration.
+**Rutu A T** - A passionate reader who has curated these book recommendations with care and thoughtfulness, someone who likes to share her interests and opinion oon the source consumed. Each review comes from genuine appreciation and careful consideration.The reviwes aere also from top websites like amazon and fun reading section.
 
 ## 📄 License
 
